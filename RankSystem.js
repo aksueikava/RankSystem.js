@@ -6,8 +6,8 @@ class akvityxs_canvas {
         if (!args.level || isNaN(args.level)) throw new Error("Не указан аргумент level");
         if (!args.xp || isNaN(args.xp)) throw new Error("Не указан аргумент xp");
         if (!args.usertag) throw new Error("Не указан аргумент usertag");
-        if (!args.avatar || !/\.png($|\?.+)/.test(args.avatar)) throw new Error("Не указана аватарка либо  она  не формата png")
-        if (!args.bg || !/\.png($|\?.+)/.test(args.avatar)) throw new Error("Не указан фон либо фон  он не формата png")
+        if (!args.avatar || !/\.png($|\?.+)/.test(args.avatar)) throw new Error("Не указана аватарка либо она не формата png")
+        if (!args.bg || !/\.png($|\?.+)/.test(args.avatar)) throw new Error("Не указан фон либо фон он не формата png")
         if (!message) throw new Error("Не указан аргумент message")
         const Canvas = require("canvas")
         const canvas = Canvas.createCanvas(1000, 282);
